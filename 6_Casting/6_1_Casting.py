@@ -4,7 +4,7 @@ Este programa pide:
 2. El impuesto (como cadena) y lo convierte a entero. Ok
 3. El descuento (como cadena) y lo convierte a flotante. Ok
 4. Luego imprime los tipos de datos antes y después de la conversión. Ok
-5. Imprimimos el total a pagar después de aplicar el impuesto y el descuento.
+5. Imprimimos el total a pagar después de aplicar el impuesto y el descuento. test
 """
 precio = input("Ingrese el precio del producto: ")
 print(type(precio))
