@@ -1,0 +1,15 @@
+# Ejercicio 9.3: Control de flujo con condicionales
+
+# Iterar del 1 al 50 e imprimir si el número es múltiplo de 2 o 7
+for i in range (1,50):
+# Verificar si el número es múltiplo de 2 o 7 y mostrar el mensaje correspondiente
+    if i % 2 == 0:
+        print("Dos")
+# Verificar si el número es múltiplo de 7
+    elif i % 2 == 0:
+        print("Dos")
+# Verificar si el número es múltiplo de 7
+    elif i % 7 == 0:
+        print("Siete")
+    else:
+        print(" ")

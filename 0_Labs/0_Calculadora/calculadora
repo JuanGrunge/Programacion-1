@@ -1,0 +1,29 @@
+import suma
+import resta
+import multiplicacion
+import division
+
+calculadora = "Si"
+
+while(calculadora == "Si"):
+    print("-",calculadora,"-")
+    menu = int(input("Seleccione la operación que desea realizar: \n 1. Suma \n 2. Resta \n 3. Multiplicación \n 4. División \n 5. Salir \n"))
+    match menu:
+        case 1:
+            print(suma.suma(input("Ingresa el primer número: "), input("Ingresa el segundo número: ")))
+            print(suma.suma_uno(input("Ingresa el primer número: "), input("Ingresa el segundo número: "))) # Nueva función suma_uno que suma 10 al resultado
+        case 2:
+            print(resta.resta(input("Ingresa el primer número: "), input("Ingresa el segundo número: ")))
+        case 3:
+            print(multiplicacion.multiplicacion(input("Ingresa el primer número: "), input("Ingresa el segundo número: ")))
+        case 4:
+            print(division.division(input("Ingresa el primer número: "), input("Ingresa el segundo número: ")))
+        case 5:
+            calculadora = "No"
+        case _:
+            print("Opción no válida, por favor seleccione una opción del 1 al 5.")
+
+    calculadora = (input("¿Desea usar la calculadora? Si/No:"+ " "))
+    if(calculadora == "No"):
+        calculadora = "No"
+        print(calculadora)
